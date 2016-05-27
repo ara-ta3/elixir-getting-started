@@ -1,5 +1,8 @@
 .PHONY: requirements.txt
 
+server:
+	cd web && mix phoenix.server
+
 run: env/bin/jupyter
 	$< notebook
 
